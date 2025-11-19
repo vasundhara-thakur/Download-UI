@@ -1,0 +1,93 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+html,body{
+width: 100%;
+height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(https://media.istockphoto.com/id/523790351/photo/dark-old-grunge-background-texture-paper.webp?a=1&s=612x612&w=0&k=20&c=CEPFBgrcdVA6G359ArKU6-hc7BrUdZOeHYZgmbpvV_w=);
+    background-size: cover;
+    background-position: center; */
+    background-color: #747171;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 50%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.card .text{
+    color: beige;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.card .text span{
+    color: green;
+}
+.outer{
+    width: 100%;
+    height: 10%;
+    background-color: #cecccc;
+    border-radius: 50px;
+}
+.inner{
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    border-radius: 50px;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    color: beige;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ddd;
+  border-top-color: green;
+  border-radius: 50%;
+  animation: spin 0.5s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn{
+    padding: 10px 12px;
+    background: linear-gradient(to right, green, rgb(118, 202, 118) );
+    border: none;
+    box-shadow: 0 5px 10px black;
+    border-radius: 5px;
+    /* color: beige; */
+    font-size: 20px;
+}
+.btn:hover{
+    scale: 0.95;
+}
+@media (max-width:500px) {
+    .bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
